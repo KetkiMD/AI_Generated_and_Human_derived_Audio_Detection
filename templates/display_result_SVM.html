@@ -1,0 +1,70 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+	Classification
+{% endblock title %}
+
+{% block content %}
+
+<head>
+	<style>
+	.center {
+	  line-height: 200px;
+	  height: 60px;
+	  border: 3px solid rgb(118, 170, 15);
+	  text-align: center;
+	}
+	
+	.center p {
+	  line-height: 1.5;
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+	</style>
+
+<style>
+	#customers {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	}
+	
+
+	#customers td, #customers th {
+	border: 3px solid #16041f;
+	padding: 8px;
+	text-align: center;
+	}
+	
+	#customers tr:nth-child(even){background-color: #deca91;text-align: center}
+	#customers tr:nth-child(odd){background-color: #ddc366;text-align: center}
+	#customers tr:hover {background-color: #f1f1f1;text-align: center;text;color: rgba(0, 0, 170, 0.858)}
+	
+	#customers th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: rgba(226, 203, 176, 0.067);
+	color: rgba(183, 9, 9, 0.858);
+	}
+	</style>
+
+
+
+	</head>
+	<div class="row justify-content-center mt-15">
+		<div class="col-md-20 text-center" text-align= "justify">
+			<br><br>
+			<h2  style="text-align: center;"> Result of uploaded audio file using SVM is : </h2>
+			<br><br><hr><br><br>
+			<h1  style="text-align: center;color:red">  {{result}}  </h1>	
+			
+			<br>
+				<br>
+				<br>
+
+		</div></div>
+
+
+{% endblock content %}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Classification
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'home_page_css .css' %}">
+
+</head>
+
+
+
+<div class="text-center">
+	<br><br><br><br><br><br>
+				<h1> <b> AI generated and manipulated voice detection  </b> </h1>
+
+	</div>
+
+
+	
+				<div class="row justify-content-center ">
+					<div class="text-center">
+		
+					 <br>
+				<p style="text-align:justify;" >	
+					<h2>
+						With the rise of deepfake technology, which can generate synthetic voices that mimic real people, AI is also being used to detect manipulated or synthesized voices. These detection systems analyze subtle cues and inconsistencies in speech to identify artificially generated content.
+
+						
+					</h2>			
+			</div>
+		</div>
+	
+			
+
+		<script>
+			var myIndex = 0;
+			carousel();
+			
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 2500);    
+			}
+		</script>
+					
+			
+{% endblock content %}

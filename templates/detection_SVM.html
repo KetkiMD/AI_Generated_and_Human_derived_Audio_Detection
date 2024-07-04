@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Classification
+{% endblock title %}
+
+{% block content %}
+
+		    <h1 style="text-align: center;">Welcome {{ user }}, upload file to get result of Classification using SVM</h1><br><hr class="hr"><br><br>
+			    <body> 
+				<form method = "post" enctype="multipart/form-data"> 
+					<div class="row justify-content-center mt-5">
+						<div class="col-md-4 text-center" text-align= "justify">
+	
+
+								{% csrf_token %}    
+								{{ form.as_p }}
+								<br>
+								<button type="submit"  class="btn btn-lg btn-warning">Upload File</button> 
+
+
+						</div>
+					</div>
+	  
+				</form> 
+				</body> 
+
+				  
+
+
+{% endblock content %}

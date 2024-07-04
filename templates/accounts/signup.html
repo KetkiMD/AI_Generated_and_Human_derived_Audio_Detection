@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}
+
+    Signup
+
+{% endblock title %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-3">
+	<div class="col-md-5">
+		<h2>Signup</h2>
+	</div>
+</div>
+
+
+<br><br>
+
+<div class="row justify-content-center mt-3">
+	<div class="col-md-5">
+			<form method="POST">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<br>
+			<input type="submit" value='Signup' class="btn btn-lg btn-warning">
+			</form>
+
+            <hr>
+            <div class="text-center">
+                Do you already have an account? <a href="{% url 'accounts:login' %}">Login here</a>
+            </div>
+			
+	</div>
+</div>
+
+    <!-- <div class="row">
+			<div class="col-md-4">
+				<form method="POST">
+					{% csrf_token %}
+					{{ form.as_p }}
+
+					<input type="submit" value='Signup' class="btn btn-outline-primary">
+				</form>
+			</div>
+			<div class="col-md-7">
+				<h4>Be Ready To Become a Part Of System</h4><hr>
+				<p class="description">
+					Well, Hello and welcome to the System! 
+				</p>
+			</div>
+		</div> -->
+
+{% endblock content %}

@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}
+	About us
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+                #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                }
+                
+                #customers td, #customers th {
+                border: 3px solid #ddd;
+                padding: 8px;
+                }
+                
+
+                
+
+                #customers th:hover {background-color: #8edcf1c9;text-align: center;text}
+                
+                #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+                background-color: #ba9958c9;
+                color: white;
+                }
+
+
+</style>
+</head>
+
+<!-- <div class="row justify-content-center mt-15">
+    <div class="col-md-20 text-center" text-align= "justify">
+
+            <h1><u>
+              About us
+            </u></h1>
+    </div>
+</div>
+
+<br>
+<hr> -->
+<div class="row justify-content-center mt-15">
+  <div class="col-md-20 text-center" text-align= "justify">
+
+          <h1><u>
+            Bharati Vidyapeeth College of engineering
+          </u></h1>
+  </div>
+</div>
+
+
+
+
+<div class="row justify-content-center mt-15">
+  <div class="col-md-20 text-center" text-align= "justify">
+          <br><br>
+          <img src="/static/img/Bharti_Vidyapeeth.jpeg" class="img-responsive" style="width: 75%; float: center; " />                
+          <br><br><br>         
+  </div>
+</div>
+
+
+<br>
+<table id="customers">
+  <!-- <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+  </tr> -->
+
+  <tr>
+    <th rowspan="3"> Members </th>
+    <th> 1. Name 1 </th>
+  </tr>
+  
+  <b>
+  <tr>
+    <th> 2. Name 2 </th>
+  </tr>
+
+  <tr>
+    <th> 3. Name 3 </th>
+  </tr>
+
+  <tr>
+    <td>  </td>
+    <td>  </td>
+  </tr>
+
+  <tr>
+    <th> Guide Name </th>
+    <th> Prof. K.S. Warke </th>
+  </tr>
+
+
+  <tr>
+    <td>  </td>
+    <td>  </td>
+  </tr>
+
+  <tr>
+    <th> IJCRT </th>
+    <th><a href="https://ijcrt.org/viewfull.php?&p_id=IJCRT2405582" target="_blank">Link</a></th>
+
+  </tr>
+
+
+
+</table>
+
+
+
+
+{% endblock %}
+
+

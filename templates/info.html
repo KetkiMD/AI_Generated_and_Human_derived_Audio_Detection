@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Information
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+                #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                }
+                
+                #customers td, #customers th {
+                border: 3px solid #ddd;
+                padding: 8px;
+                }
+                
+                #customers tr:nth-child(even){background-color: #d62a2a;
+                    text-align: center;
+                }
+                #customers tr:nth-child(odd){background-color: #ffffff;
+                    text-align: center;
+                }
+
+
+                #customers tr:hover {background-color: #787775c9;text-align: center;text}
+                
+                #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+                background-color: #555555;
+                color: white;
+                }
+
+
+</style>
+</head>
+<body>
+
+
+<br>
+
+<br>
+
+<div class="row justify-content-center mt-15">
+    <div class="col-md-20 text-center" text-align= "justify">
+
+            <h1><u>
+              AI generated and manipulated voice detection
+            </u></h1>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+<div class="row justify-content-center mt-15">
+    <div class="col-md-20 text-justify" text-align= "justify">
+      <h4>
+        With the rise of deepfake technology, which can generate synthetic voices that mimic real people, AI is also being used to detect manipulated or synthesized voices. These detection systems analyze subtle cues and inconsistencies in speech to identify artificially generated content.      </h4>
+    </div>
+
+    </div>
+    <br>
+    <br>
+
+    <div class="row justify-content-center mt-15">
+      <div class="col-md-20 text-center" text-align= "justify">
+  
+              <h2><u>
+                Performance parameters
+              </u></h2>
+      </div>
+  </div>
+  
+  
+
+<br>
+<table id="customers">
+  <tr>
+    <th>Parameter</th>
+    <th>Value with Classification using Neural Network</th>
+    <th>Value with Classification using SVM</th>
+  </tr>
+
+  <tr>
+    <td> Accuracy </td>
+    <td> 99.52 % </td>
+    <td> 96.99 % </td>
+  </tr>
+
+  <tr>
+    <td> Recall (Sensitivity) </td>
+    <td> 99.69 % </td>
+    <td> 97.16 % </td>
+  </tr>
+
+  <tr>
+    <td> Specificity </td>
+    <td> 99.35 % </td>
+    <td> 96.82 % </td>
+  </tr>
+
+  <tr>
+    <td> Precision </td>
+    <td> 99.34 % </td>
+    <td> 96.78 % </td>
+  </tr>
+
+  <tr>
+    <td> Negative Predictive Value </td>
+    <td> 99.69 % </td>
+    <td> 97.19 % </td>
+  </tr>
+
+    <tr>
+    <td> F1 score </td>
+    <td> 99.51 % </td>
+    <td> 96.97 % </td>
+  </tr>
+
+  <tr>
+    <td> False Positive Rate </td>
+    <td> 0.65 % </td>
+    <td> 3.18 % </td>
+  </tr>
+
+  <tr>
+    <td> False Discovery Rate </td>
+    <td> 0.66 % </td>
+    <td> 3.22 % </td>
+  </tr>
+
+  <tr>
+    <td> False Negative Rate </td>
+    <td> 0.31 % </td>
+    <td> 2.84 % </td>
+  </tr>
+
+
+</table>
+
+
+    
+
+<!--  -->
+
+<!-- 
+    <br><br><br>
+    <h4>
+        System Architecture
+    </h4>
+
+        <div class="row justify-content-center mt-15">
+            <div class="col-md-20 text-center" text-align= "justify">
+                    <br><br>
+                    <img src="/static/img/architecture.png" class="img-responsive" style="width: 75%; float: center; " />                
+                    <br><br><br>         
+            </div>
+        </div>
+
+            <br>
+            <br>
+ -->
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: center;
+        }
+
+        #customers tr:nth-child(even){background-color: #669ec3c9;
+                    text-align: center;
+                }
+        #customers tr:nth-child(odd){background-color: #2b84c0c9;
+            text-align: center;
+        }
+        
+        #customers tr:hover {background-color: #1d38b1c7;text-align: center;}
+        
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: center;
+          background-color: #3e53b3e0;
+          color: white;
+        }
+        </style>
+        </head>
+        <body>
+
+<!-- 
+        <h4>
+            comparative study of proposed algorithm with existing algorithm on the basis of performance parameters
+        </h4>
+           
+        
+        <table id="customers">
+          
+          <tr>
+            <th></th>
+            <th>Proposed Method</th>
+          </tr>
+        
+          <tr>
+            <td> Accuracy </td>
+            <td> 99.44 %</td>
+          </tr>
+        
+          <tr>
+            <td> Precision </td>
+            <td> 99.33 % </td>
+          </tr>
+        
+          <tr>
+            <td> Recall </td>
+            <td> 99.00 % </td>
+          </tr>
+        
+          <tr>
+            <td> F1 score </td>
+            <td> 99.67 % </td>
+          </tr>
+        
+        
+        </table> -->
+        
+        </body>
+        </html>
+        <br>
+        <br>
+                
+
+
+{% endblock %}
+
+
